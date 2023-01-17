@@ -17,7 +17,7 @@ public class FoodSaverServiceImpl implements FoodSaverService {
 	
 	@Override
 	public Food saveFoodWastageData(Food food) {
-		food.setFoodWastedDate(new SimpleDateFormat("YYYY-MMM-dd-HHmmss").format(new Date()));
+		food.setFoodWastedDate(new SimpleDateFormat("YYYY-MMM-dd").format(new Date()));
 		food.setNumberOfPeopleCanFed((int)(food.getFoodWasted()/food.singlePersonConsumption));
 		foodRepository.save(food);
 		return food;
