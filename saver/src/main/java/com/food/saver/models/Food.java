@@ -18,8 +18,8 @@ import lombok.Setter;
 @Document(collection = "food")
 public class Food {
 	@Id
-	private String id;
-	private String numberOfPerson;
+	private String foodWastedDate;
+	public static final double singlePersonConsumption = 1.2;
 	private double foodWasted;
 	private int numberOfPeopleCanFed;
 }
