@@ -9,4 +9,5 @@ public class Response {
 
 	private Food food;
 	private String message;
+	private String token;
 }

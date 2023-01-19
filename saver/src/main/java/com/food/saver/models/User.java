@@ -13,11 +13,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Document(collection = "food")
-public class Food {
+@Document(collection = "user")
+public class User {
+
 	@Id
-	private String foodWastedDate;
-	public static final double singlePersonConsumption = 1.2;
-	private double foodWasted;
-	private int numberOfPeopleCanFed;
+	private String userCreationDate;
+	public String email;
+	public String password;
+	public String role;
 }
